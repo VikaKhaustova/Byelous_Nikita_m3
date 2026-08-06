@@ -1,0 +1,149 @@
+body { background-image: linear-gradient(214deg, rgb(144, 100, 159) 0%, rgb(144, 100, 159) 24%,rgb(112, 112, 163) 24%, rgb(112, 112, 163) 28%,rgb(79, 124, 166) 28%, rgb(79, 124, 166) 40%,rgb(47, 136, 170) 40%, rgb(47, 136, 170) 84%,rgb(14, 148, 173) 84%, rgb(14, 148, 173) 100%),linear-gradient(169deg, rgb(144, 100, 159) 0%, rgb(144, 100, 159) 24%,rgb(112, 112, 163) 24%, rgb(112, 112, 163) 28%,rgb(79, 124, 166) 28%, rgb(79, 124, 166) 40%,rgb(47, 136, 170) 40%, rgb(47, 136, 170) 84%,rgb(14, 148, 173) 84%, rgb(14, 148, 173) 100%),linear-gradient(304deg, rgb(144, 100, 159) 0%, rgb(144, 100, 159) 24%,rgb(112, 112, 163) 24%, rgb(112, 112, 163) 28%,rgb(79, 124, 166) 28%, rgb(79, 124, 166) 40%,rgb(47, 136, 170) 40%, rgb(47, 136, 170) 84%,rgb(14, 148, 173) 84%, rgb(14, 148, 173) 100%),linear-gradient(259deg, rgb(79, 35, 157),rgb(43, 171, 222)); background-blend-mode:overlay,overlay,overlay,normal; }
+h1 { text-align: center; }
+nav { text-align: center; }
+h2 { text-align: center; }
+h3 { text-align: center;  font-size: 30px;}
+h5{ margin: 0;}
+h6{
+    margin: 0;
+}
+footer { background-color: gray}
+img { display: flex; padding: 20px; }
+.catalog-img { width:175px; height :200px;}
+.catalog-div { width :300px; text-align:center; display:flex; flex-direction:column; align-items:center; font-size: 25px; }
+.all-divs { display:flex; flex-wrap:wrap; justify-content:center; }
+.catalog-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Airovox { font-size: 40px; }
+.info-text { width:600px; }
+.info { display: flex; align-items: center; gap: 20px; justify-content:space-around; flex-wrap:wrap; font-size:30px;}
+.recall-div { display: flex; justify-content:flex-start; flex-wrap:wrap; width: 450px; font-size: 25px; align-items: center}
+.recalls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.recall{
+     margin-bottom: 50px;
+     margin-top: 50px;
+}
+nav { text-decoration: none; }
+
+.button {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.button:hover::after {
+  filter: blur(30px);
+}
+
+.button:hover::before {
+  transform: rotate(-180deg);
+}
+
+.button:active::before {
+  scale: 0.7;
+}
+
+header {  
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;  
+    background-image: url("1.jpeg");  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    padding: 40px 0 40px 0; 
+}  
+
+.logo1 {   
+    color: #FFF;   
+    text-shadow: 10px 10px 5px navy, 10px 10px 5px black;   
+    font-size: 55px;   
+}   
+
+nav {   
+    display: flex;   
+    justify-content: space-around;   
+    flex-wrap: wrap;   
+    width: 100%;   
+}   
+
+.nav-link {   
+    color: #FFF;   
+    font-size: 24px;   
+    text-decoration: none;   
+}   
+
+.nav-link:hover {   
+    font-weight: 900;   
+    color: rgb(11, 119, 161);   
+    transition: 0.2s ease-in;   
+    text-shadow: 5px 5px black;   
+}   
+
+footer {
+    background-color: #C4C4C4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 { 
+    font-size: 36px;
+    font-weight: 700;
+} 
+
+footer img { 
+    width: 225px; 
+}
+
+h4 { font-size:30px; }
